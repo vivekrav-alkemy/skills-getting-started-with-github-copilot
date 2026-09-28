@@ -60,9 +60,10 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #d9dee8;
+  border-left: 4px solid #1a237e;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .activity-card h4 {
@@ -72,6 +73,113 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e1e5eb;
+  background: transparent;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+  max-width: none;
+}
+
+.participants h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.participant-count {
+  display: inline-flex;
+  min-width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7px;
+  border-radius: 12px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 13px;
+}
+
+.participants ul {
+  display: grid;
+  gap: 4px;
+  padding: 0;
+  list-style: none;
+}
+
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 34px;
+  padding: 3px 4px 3px 9px;
+  border-radius: 4px;
+  background-color: #f5f7fa;
+}
+
+.participant-row span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #444;
+}
+
+.participant-remove {
+  display: inline-flex;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #a33a3a;
+  cursor: pointer;
+}
+
+.participant-remove:hover {
+  border-color: #f0caca;
+  background-color: #fff0f0;
+  color: #8b2525;
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.participant-remove:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.participant-remove svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.participants-empty {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .form-group {
